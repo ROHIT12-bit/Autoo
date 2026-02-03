@@ -38,3 +38,5 @@ class Config:
     WELCOME_MSG = os.environ.get("WELCOME_MSG", "Welcome {mention} to {title}!")
     START_MSG = os.environ.get("START_MSG", "Hello {mention}, {wish}!\n\nI am an Advanced Auto Filter Bot with many features.\n\nBranding: **Botskingdoms**")
     ABOUT_MSG = os.environ.get("ABOUT_MSG", "**About This Bot**\n\nName: Botskingdoms Filter Bot\nOwner: [Admin](tg://user?id={owner_id})\nLanguage: Python\nFramework: Pyrogram\n\n© @{updates_channel}")
+    STREAM_URL_TEMPLATE = os.environ.get("STREAM_URL_TEMPLATE", "https://t.me/{username}?start=stream_{file_id}")
+    DOWNLOAD_URL_TEMPLATE = os.environ.get("DOWNLOAD_URL_TEMPLATE", "https://t.me/{username}?start=dl_{file_id}")

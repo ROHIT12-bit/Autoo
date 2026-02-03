@@ -102,8 +102,8 @@ async def send_file(client, query):
 
     # Generate Stream and Download links
     from plugins.shortener import get_shortlink
-    stream_url = f"https://t.me/{client.username}?start=stream_{file_id}"
-    download_url = f"https://t.me/{client.username}?start=dl_{file_id}"
+    stream_url = Config.STREAM_URL_TEMPLATE.format(username=client.username, file_id=file_id)
+    download_url = Config.DOWNLOAD_URL_TEMPLATE.format(username=client.username, file_id=file_id)
 
     short_stream = await get_shortlink(stream_url)
     short_download = await get_shortlink(download_url)
