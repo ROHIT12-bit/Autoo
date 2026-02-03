@@ -4,20 +4,21 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Config:
-    API_ID = int(os.environ.get("API_ID", "12345"))
-    API_HASH = os.environ.get("API_HASH", "abcdef")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    OWNER_ID = int(os.environ.get("OWNER_ID", "12345678"))
-    DATABASE_URL = os.environ.get("DATABASE_URL", "")
+    API_ID = int(os.environ.get("API_ID", "20366634"))
+    API_HASH = os.environ.get("API_HASH", "72095ec36984aa9ceb0dbaa9cec31559")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8388743951:AAGQjPpnbLo4t7p3lHbpWktotNk4hpYd7JE")
+    OWNER_ID = int(os.environ.get("OWNER_ID", "8476571786"))
+    DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://botskingdom1:gf3vWBaZi5hKwWd0@cluster0.7tu4jk0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     DATABASE_NAME = os.environ.get("DATABASE_NAME", "Botskingdoms")
     COLLECTION_NAME = os.environ.get("COLLECTION_NAME", "Telegram_files")
 
-    CHANNELS = [int(ch) for ch in os.environ.get("CHANNELS", "").split() if ch]
-    FSUB = os.environ.get("FSUB", "")
+    CHANNELS = [int(ch) for ch in os.environ.get("CHANNELS", "-1003708993456").split() if ch]
+    FSUB = os.environ.get("FSUB", "-1003708993456")
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "Botskingdoms")
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "BOTSKINGDOMS")
 
-    START_PIC = os.environ.get("START_PIC", "https://graph.org/file/e322409581a95e2697e88.jpg")
+    START_PIC = os.environ.get("START_PIC", "https://i.rj1.dev/aMNXA.jpg")
+
 
     # Shortener
     SHORTENER_URL = os.environ.get("SHORTENER_URL", "")
