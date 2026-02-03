@@ -67,7 +67,7 @@ async def search_callback(client, query):
 @Client.on_callback_query(filters.regex(r"^next#"))
 async def next_page(client, query):
     _, offset, search_query = query.data.split("#")
-    offset = int(offset) + 1
+    offset = int(offset)
 
     results, total = await get_search_results(search_query, offset=offset*10)
     settings = await db.get_settings(query.message.chat.id)
@@ -86,10 +86,10 @@ async def next_page(client, query):
 
     pages_btn = []
     if offset > 0:
-        pages_btn.append(InlineKeyboardButton("⬅️ Back", callback_data=f"next#{offset-2}#{search_query}"))
+        pages_btn.append(InlineKeyboardButton("⬅️ Back", callback_data=f"next#{offset-1}#{search_query}"))
     pages_btn.append(InlineKeyboardButton(f"{offset+1}/{total//10 + 1}", callback_data="pages"))
     if (offset+1)*10 < total:
-        pages_btn.append(InlineKeyboardButton("Next ➡️", callback_data=f"next#{offset}#{search_query}"))
+        pages_btn.append(InlineKeyboardButton("Next ➡️", callback_data=f"next#{offset+1}#{search_query}"))
 
     btn.append(pages_btn)
 

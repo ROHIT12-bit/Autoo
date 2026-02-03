@@ -36,6 +36,39 @@ Click the button below to deploy on Render:
 - `SHORTENER_API`: Custom shortener API key.
 - `GOOGLE_AI_API_KEY`: API key for Gemini.
 
+## Bot Commands
+Copy and paste this list to @BotFather:
+```text
+start - Start the bot
+help - Get help menu
+stats - Bot statistics (Owner)
+settings - Configure bot settings
+imdb - Search movie info from IMDB
+song - Download song from YouTube
+ringtone - Download ringtones
+ai - Ask anything to Google AI
+telegraph - Upload media to Telegraph
+ping - Check bot speed
+id - Get Telegram IDs
+info - Get user info
+index - Index channel files (Owner)
+broadcast - Broadcast to users (Owner)
+grp_broadcast - Broadcast to groups (Owner)
+ban - Ban a user (Owner)
+unban - Unban a user (Owner)
+leave - Leave a chat (Owner)
+disable - Disable a chat (Owner)
+add_premium - Add premium user (Owner)
+remove_premium - Remove premium user (Owner)
+delete - Delete files by query (Owner)
+filestore - Store a file (Owner)
+shorten - Shorten a URL (Owner)
+streaming - Best streaming sites
+spotify - Spotify info
+stickerid - Get sticker ID
+random - Random picture
+```
+
 ## Branding
 Branding Botskingdoms
 https://t.me/BOTSKINGDOMS

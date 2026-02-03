@@ -15,7 +15,7 @@ async def fsub_check(client, message):
     if not Config.FSUB:
         return
 
-    if message.text and message.text.startswith("/start"):
+    if message.text and message.text == "/start":
         return
 
     try:
