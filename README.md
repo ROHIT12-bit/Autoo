@@ -1,43 +1,93 @@
-# Botskingdoms Auto Filter Bot
+<h1 align="center">
+  <b>Botskingdoms Auto Filter Bot</b>
+</h1>
 
-An Advanced Telegram Auto Filter Bot with multiple features, branding, and easy deployment support.
+<p align="center">
+  <img src="https://graph.org/file/e322409581a95e2697e88.jpg" alt="Botskingdoms Logo" width="200">
+</p>
 
-## Features
-- **Auto Filter**: Search indexed files with single/double button modes.
-- **Shortener Support**: Integrated with custom shorteners for Stream and Download links.
-- **IMDB Integration**: Fetch movie metadata and templates.
-- **Downloader**: Download songs (YouTube) and ringtones.
-- **AI & Telegraph**: Google AI (Gemini) integration and Telegraph media upload.
-- **Force Subscription**: Restrict bot usage to channel members.
-- **Join Request**: Automatically approve or track join requests.
-- **Management**: Broadcast, Ban/Unban, Premium membership, and Settings.
-- **Branding**: Fully customizable branding for @Botskingdoms.
+<p align="center">
+  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python" alt="Python"></a>
+  <a href="https://docs.pyrogram.org"><img src="https://img.shields.io/badge/Framework-Pyrogram-orange?style=for-the-badge" alt="Pyrogram"></a>
+  <a href="https://www.mongodb.com"><img src="https://img.shields.io/badge/Database-MongoDB-green?style=for-the-badge&logo=mongodb" alt="MongoDB"></a>
+</p>
 
-## Deployment
+<p align="center">
+  <b>An Advanced Auto Filter Bot with Shortener Support, AI, and Media Tools.</b>
+</p>
 
-### Render
-Click the button below to deploy on Render:
+---
+
+## 🚀 Features
+
+- 📂 **Auto Filter**: Advanced file search with Single/Double button modes.
+- 🔗 **Shortener Support**: Supports all shortener websites for Stream/Download links.
+- 🎬 **IMDB Integration**: Get movie details with professional templates.
+- 🎵 **Media Downloader**: Fast YouTube song and ringtone downloads.
+- 🤖 **Google AI**: Powered by Gemini for smart conversations.
+- 💎 **Premium System**: Manage premium memberships and user permissions.
+- 📢 **Force Sub**: Request to join and mandatory channel subscription.
+- 🛠️ **Admin Tools**: Bulk broadcast, indexing, and user management.
+- 🎨 **Branding**: Fully customizable for **@Botskingdoms**.
+
+---
+
+## 🛠️ Configuration
+
+Configure the following environment variables in your `.env` file or deployment dashboard:
+
+| Variable | Description |
+|----------|-------------|
+| `API_ID` | Your Telegram API ID from my.telegram.org |
+| `API_HASH` | Your Telegram API Hash from my.telegram.org |
+| `BOT_TOKEN` | Your Bot Token from @BotFather |
+| `OWNER_ID` | Your Telegram User ID |
+| `DATABASE_URL` | Your MongoDB Connection String |
+| `FSUB` | Channel ID for Force Subscription |
+| `SHORTENER_URL` | Your Shortener Website URL (e.g., gplinks.in) |
+| `SHORTENER_API` | Your Shortener API Key |
+| `GOOGLE_AI_API_KEY` | Your Google Gemini API Key |
+
+---
+
+## 📦 Deployment
+
+### 🚀 Deploy to Render
+1. Create a Blueprint on [Render](https://render.com).
+2. Use the provided `render.yaml`.
+
 [![Deploy to Render](https://render.com/images/deploy-to-render.svg)](https://render.com/)
 
-### Local Setup
-1. Clone the repo.
-2. Install requirements: `pip install -r requirements.txt`.
-3. Create a `.env` file with your variables.
-4. Run: `python3 bot.py`.
+### 💻 Local Deployment
+```bash
+# Clone the repository
+git clone https://github.com/Botskingdoms/Auto-Filter-Bot.git
+cd Auto-Filter-Bot
 
-## Config Variables
-- `API_ID`: Get from my.telegram.org.
-- `API_HASH`: Get from my.telegram.org.
-- `BOT_TOKEN`: Get from @BotFather.
-- `OWNER_ID`: Your Telegram User ID.
-- `DATABASE_URL`: MongoDB URL.
-- `FSUB`: Channel ID for force subscription.
-- `SHORTENER_URL`: Custom shortener website URL.
-- `SHORTENER_API`: Custom shortener API key.
-- `GOOGLE_AI_API_KEY`: API key for Gemini.
+# Install dependencies
+pip install -r requirements.txt
 
-## Bot Commands
-Copy and paste this list to @BotFather:
+# Run the bot
+python3 bot.py
+```
+
+---
+
+## 📜 Bot Commands
+| Command | Description |
+|---------|-------------|
+| `/start` | Initialize the bot |
+| `/help` | View help menu |
+| `/settings` | Open settings dashboard |
+| `/imdb` | Search movies on IMDB |
+| `/song` | Download YouTube songs |
+| `/ai` | Chat with Google AI |
+| `/index` | Index channel files (Admin) |
+| `/stats` | View bot statistics |
+
+*Full command list available in the help menu.*
+
+### 📋 Full Command List (for @BotFather)
 ```text
 start - Start the bot
 help - Get help menu
@@ -69,6 +119,12 @@ stickerid - Get sticker ID
 random - Random picture
 ```
 
-## Branding
-Branding Botskingdoms
-https://t.me/BOTSKINGDOMS
+---
+
+## 🤝 Support & Branding
+<p align="center">
+  <b>Branding: Botskingdoms</b><br>
+  <a href="https://t.me/BOTSKINGDOMS">
+    <img src="https://img.shields.io/badge/Telegram-Updates-blue?style=for-the-badge&logo=telegram" alt="Updates">
+  </a>
+</p>
